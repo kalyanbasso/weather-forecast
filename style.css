@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    background-color: #04263F;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-height: 60rem;
+    max-width: 40rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.search input {
+    width: 70%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: 1px solid #04263F;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.search button {
+    width: 20%;
+    height: 100%;
+    font-size: 1.5rem;
+    border: 1px solid #04263F;
+    border-radius: 1rem;
+    background-color: #04263F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #fff;
+    color: #04263F;
+    transition: 400ms;
+}
+
+#display {
+    height: 80%;
+    width: 90%;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+#cityName {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-temp {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.other-temp {
+    font-size: 2rem;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.humidity,
+.wind-speed {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #04263F;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 10rem;
+}
+
+#error,
+#init {
+    display: none;
+    height: 80%;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+#init {
+    display: flex;
+}
+
+.not-found-image,
+.search-image {
+    width: 80%;
+}
+
+#error p,
+#init p {
+    font-size: 1.5rem;
+    text-align: center;
+}

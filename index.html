@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Previsão do Tempo</title>
+    <link rel="icon" href="images/weather-forecast.png">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="search">
+                <input id="city" type="text" placeholder="Digite o nome da cidade">
+                <button onclick="getWeather()">Buscar</button>
+            </div>
+            <div id="init">
+                <img class="search-image" src="images/seo.png" alt="search">
+                <p>Digite o nome de uma cidade no campo de busca.</p>
+            </div>
+            <div id="display">
+                <div id="cityName">
+                    -
+                </div>
+                <div class="main-temp">
+                    <span id="temperature">-</span>
+                    <p>Temperatura</p>
+                </div>
+                <div class="other-temp">
+                    <div class="humidity">
+                        <span id="humidity">-</span>
+                        <p>Umidade</p>
+                    </div>
+                    <div class="wind-speed">
+                        <span id="windSpeed">-</span>
+                        <p>Vento</p>
+                    </div>
+                </div>
+            </div>
+            <div id="error">
+                <img class="not-found-image" src="images/not_found.png" alt="not found">
+                <p>Ops! Não encontramos a cidade que você digitou.</p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
